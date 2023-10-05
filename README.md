@@ -9,12 +9,11 @@
 
 ## Description
 
-The Hangman project is a classic word-guessing game implemented in Python. The aim of the project is to create an interactive game where the computer selects a secret word, and the user tries to guess it letter-by-letter. The user has a limited number of attempts, and for each incorrect guess, a part of the hangman is drawn. The user wins if they guess the word before the hangman is fully drawn, and they lose if the hangman is completed before they guess the word.
+The Hangman project is a classic word-guessing game implemented in Python. The aim of the project is to create an interactive game where the computer selects a secret word, and the user tries to guess it letter-by-letter. The user has a limited number of attempts. The user wins if they guess the word before they run out of the attempts, and they lose if the hangman is "completed" before they guess the word.
 
 ### What I Learned
 - How to use Git for version control.
-- Implementing classes to organize code and improve code readability.
-- Utilizing encapsulation and abstraction principles to manage game state and user interaction.
+- Improve code readability.
 
 ## Installation
 
