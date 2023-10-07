@@ -98,4 +98,6 @@ def play_game(word_list):
         game.ask_for_input()
 
 # Create an instance of the Hangman class and start the game
-play_game(word_list)
+if __name__ == "__main__":
+    play_game(word_list)
+
