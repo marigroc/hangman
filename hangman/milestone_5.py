@@ -85,7 +85,7 @@ def play_game(word_list):
     if game.num_letters == 0:
         print('Congratulations. You won the game!')
         
-    elif game.num_lives == 0:
+    elif game.num_lives <= 0:
         print('You lost!')
         
     else:
