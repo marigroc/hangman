@@ -61,36 +61,41 @@ class Hangman:
                     self._check_guess(guess)  
                     self.list_of_guesses.append(guess)
 
-                    # Update num_letters based on remaining unique letters to guess
-                    remaining_unique_letters = set(self.word) - set(self.list_of_guesses)
-                    self.num_letters = len(remaining_unique_letters)
-                    print(self.num_letters)
                     # Update the word_guess with correctly guessed letters
                     for position, letter in enumerate(self.word):
                         if letter == guess:
                             self.word_guess[position] = letter
-                        else:
-                            pass
-                    self.num_letters -= 1
+                        
+                    # Update num_letters based on remaining unique letters to guess
+                    remaining_unique_letters = set(self.word) - set(self.list_of_guesses)
+                    self.num_letters = len(remaining_unique_letters)
+
                     # Print the current word_guess
                     [print(item, end='') for item in self.word_guess]
+                    print()  # Add a newline to separate guesses
+
+                    return self.num_letters
                 
 def play_game(word_list):
     num_lives = 5
 
     # Create an instance of the Hangman class
     game = Hangman(word_list, num_lives)
-
     
-    if game.num_letters == 0:
-        print('Congratulations. You won the game!')
-        
-    elif game.num_lives <= 0:
-        print('You lost!')
-        
-    else:
-        game.ask_for_input()
 
+    while True:
+        # Check if the game has ended (no lives left)
+        if game.num_lives == 0:
+            print('You lost!')
+            break
+
+        # Check if the player has guessed all letters
+            
+        if game.num_letters == 0:
+            print('Congratulations. You won the game!')
+            break
+        
+        game.ask_for_input()
 
 # Create an instance of the Hangman class and start the game
 play_game(word_list)
