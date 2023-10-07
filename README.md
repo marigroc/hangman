@@ -16,6 +16,7 @@ The Hangman project is a classic word-guessing game implemented in Python. The a
 - Utilizing encapsulation and abstraction principles to manage game state and user interaction.
 - Handling correct user input for single alphabetical characters.
 - Tracking and displaying game progress, including guessed letters and remaining lives.
+- Troubleshooting for the infinite loops and how to fix them.
 
 
 ## Installation
@@ -24,7 +25,7 @@ To run the Hangman game, follow these steps:
 
 1. Clone the repository to your local machine using Git:
    ```bash
-   git clone https://github.com/your-username/hangman.git
+   git clone https://github.com/marigroc/hangman.git
 2. Navigate to the project directory:
    ```bash
    cd hangman
@@ -47,12 +48,12 @@ The project file structure is organized as follows:
 ```bash
 hangman/
 │
-├── hangman.py           # Main game script
-├── milestone_2.py       # Basic functionality of the game
-├── milestone_3.py       # Rebuilt functions with added complexity
-├── milestone_4.py       # Third step in building complex code
-├── words.txt            # Text file containing a list of words for the game
-└── README.md            # Project documentation (this file)
+├── hangman.py           # Main game script.
+├── milestone_2.py       # Basic functionality of the game with simple code.
+├── milestone_3.py       # Rebuilt functions with added complexity.
+├── milestone_4.py       # Third step in building complex code.
+├── words.txt            # Text file containing a list of words for the game.
+└── README.md            # Project documentation (this file).
 ```
 
 
